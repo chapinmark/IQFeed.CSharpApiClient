@@ -24,5 +24,6 @@ namespace IQFeed.CSharpApiClient.Streaming.Level1
         void ReqUnwatchAll();
         void ReqServerConnect();
         void ReqServerDisconnect();
+        void SetClientName(string name);
     }
 }

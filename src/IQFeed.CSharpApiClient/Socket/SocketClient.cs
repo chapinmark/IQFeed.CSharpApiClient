@@ -139,6 +139,7 @@ namespace IQFeed.CSharpApiClient.Socket
                 return;
 
             _disposed = true;
+            _clientSocket?.Disconnect(false);
             _clientSocket?.Dispose();
             _socketMessageHandler.Dispose();
             _readEventArgs?.Dispose();
