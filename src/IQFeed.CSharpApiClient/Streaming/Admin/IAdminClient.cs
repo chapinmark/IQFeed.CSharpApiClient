@@ -1,9 +1,8 @@
-﻿using IQFeed.CSharpApiClient.Common;
-using IQFeed.CSharpApiClient.Common.Interfaces;
+﻿using IQFeed.CSharpApiClient.Streaming.Common.Interfaces;
 
 namespace IQFeed.CSharpApiClient.Streaming.Admin
 {
-    public interface IAdminClient: IClient, IAdminMessage
+    public interface IAdminClient: IStreamingClient, IAdminMessage
     {
         void RegisterClientApp(string productId, string productVersion);
         void RemoveClientApp(string productId, string productVersion);
@@ -18,6 +17,5 @@ namespace IQFeed.CSharpApiClient.Streaming.Admin
 
         // TODO: should be part from another interface
         void SetProtocol(string version);
-        void SetClientName(string name);
     }
 }

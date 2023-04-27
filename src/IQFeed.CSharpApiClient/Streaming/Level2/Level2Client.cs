@@ -202,6 +202,13 @@ namespace IQFeed.CSharpApiClient.Streaming.Level2
             _socketClient.Disconnect();
         }
 
+        public void SetClientName(string name)
+        {
+            var request = _level2RequestFormatter.SetClientName(name);
+            _socketClient.Send(request);
+        }
+
+
         private decimal GetProtocolVersionAsNumber()
         {
             return decimal.Parse(_protocolVersion);

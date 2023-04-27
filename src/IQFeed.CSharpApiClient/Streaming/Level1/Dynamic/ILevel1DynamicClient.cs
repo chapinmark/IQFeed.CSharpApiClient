@@ -1,9 +1,9 @@
 ﻿using IQFeed.CSharpApiClient.Common;
-using IQFeed.CSharpApiClient.Common.Interfaces;
+using IQFeed.CSharpApiClient.Streaming.Common.Interfaces;
 
 namespace IQFeed.CSharpApiClient.Streaming.Level1.Dynamic
 {
-    public interface ILevel1DynamicClient : IClient, ILevel1DynamicEvent, ILevel1DynamicSnapshot
+    public interface ILevel1DynamicClient : IStreamingClient, ILevel1DynamicEvent, ILevel1DynamicSnapshot
     {
         void ReqWatch(string symbol);
         void ReqTradesOnlyWatch(string symbol);
@@ -23,6 +23,5 @@ namespace IQFeed.CSharpApiClient.Streaming.Level1.Dynamic
         void ReqUnwatchAll();
         void ReqServerConnect();
         void ReqServerDisconnect();
-        void SetClientName(string name);
     }
 }

@@ -1,9 +1,9 @@
 ﻿using IQFeed.CSharpApiClient.Common;
-using IQFeed.CSharpApiClient.Common.Interfaces;
+using IQFeed.CSharpApiClient.Streaming.Common.Interfaces;
 
 namespace IQFeed.CSharpApiClient.Streaming.Level1
 {
-    public interface ILevel1Client: IClient, ILevel1Event, ILevel1Snapshot
+    public interface ILevel1Client: IStreamingClient, ILevel1Event, ILevel1Snapshot
     {
         void ReqWatch(string symbol);
         void ReqTradesOnlyWatch(string symbol);
@@ -24,6 +24,5 @@ namespace IQFeed.CSharpApiClient.Streaming.Level1
         void ReqUnwatchAll();
         void ReqServerConnect();
         void ReqServerDisconnect();
-        void SetClientName(string name);
     }
 }
