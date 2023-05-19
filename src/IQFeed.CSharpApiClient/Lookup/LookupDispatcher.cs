@@ -60,6 +60,15 @@ namespace IQFeed.CSharpApiClient.Lookup
             }
         }
 
+        public async Task<SocketClient> TakeAsync(int timeout)
+        {
+            await _semaphoreSlim.WaitAsync(timeout);
+            lock (_socketClientsAvailable)
+            {
+                return _socketClientsAvailable.Dequeue();
+            }
+        }
+
         public void Add(SocketClient socketClient)
         {
             lock (_socketClientsAvailable)

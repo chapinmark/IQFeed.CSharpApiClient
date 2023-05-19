@@ -26,7 +26,7 @@ namespace IQFeed.CSharpApiClient.Streaming.Admin
                     continue;
 
                 if (messages[i][0] != 'S')
-                    throw new NotSupportedException(); // Admin should only receive S messages
+                    throw new NotSupportedException($"Admin message not supported: {messages[i]}"); // Admin should only receive S messages
 
                 var values = messages[i].Substring(2).Split(IQFeedDefault.ProtocolDelimiterCharacter);
                 switch (values[0])

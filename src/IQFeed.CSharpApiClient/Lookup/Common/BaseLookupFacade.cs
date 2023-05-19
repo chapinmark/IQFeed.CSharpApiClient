@@ -28,7 +28,7 @@ namespace IQFeed.CSharpApiClient.Lookup.Common
 
         protected async Task<IEnumerable<T>> GetMessagesAsync<T>(string request, Func<byte[], int, MessageContainer<T>> messageHandler)
         {
-            var client = await _lookupDispatcher.TakeAsync();
+            var client = await _lookupDispatcher.TakeAsync((int)_timeout.TotalMilliseconds);
 
             var messages = new List<T>();
             var invalidMessages = new List<InvalidMessage<T>>();
