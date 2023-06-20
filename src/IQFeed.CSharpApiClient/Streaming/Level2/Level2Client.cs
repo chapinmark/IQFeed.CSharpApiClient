@@ -169,6 +169,18 @@ namespace IQFeed.CSharpApiClient.Streaming.Level2
             _socketClient.Send(request);
         }
 
+        public void ReqWatchList()
+        {
+            var request = _level2RequestFormatter.ReqWatches();
+            _socketClient.Send(request);
+        }
+
+        public void ReqUnwatchAll()
+        {
+            var request = _level2RequestFormatter.ReqUnwatchAll();
+            _socketClient.Send(request);
+        }
+
         public void ReqServerConnect()
         {
             var request = _level2RequestFormatter.ReqServerConnect();

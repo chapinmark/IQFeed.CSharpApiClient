@@ -10,7 +10,5 @@ namespace IQFeed.CSharpApiClient.Streaming.Derivative
             TimeSpan? endFilterTime = null, string requestId = null, DerivativeIntervalType? intervalType = null, int? updateInterval = null);
 
         void ReqBarUnwatch(string symbol, string requestId);
-        void ReqWatches();
-        void UnwatchAll();
     }
 }

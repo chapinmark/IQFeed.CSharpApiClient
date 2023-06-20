@@ -29,6 +29,16 @@ namespace IQFeed.CSharpApiClient.Streaming.Level2
             return $"r{symbol.ToUpper()}{IQFeedDefault.ProtocolTerminatingCharacters}";
         }
 
+        public string ReqUnwatchAll()
+        {
+            return $"S,UNWATCH ALL{IQFeedDefault.ProtocolTerminatingCharacters}";
+        }
+
+        public string ReqWatches()
+        {
+            return $"S,REQUEST WATCHES,{IQFeedDefault.ProtocolTerminatingCharacters}";
+        }
+        
         public string ReqServerConnect()
         {
             return $"c{IQFeedDefault.ProtocolTerminatingCharacters}";

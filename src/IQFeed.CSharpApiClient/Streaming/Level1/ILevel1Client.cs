@@ -7,7 +7,6 @@ namespace IQFeed.CSharpApiClient.Streaming.Level1
     {
         void ReqWatch(string symbol);
         void ReqTradesOnlyWatch(string symbol);
-        void ReqUnwatch(string symbol);
         void ReqForcedRefresh(string symbol);
         void ReqTimestamp();
         void ReqTimestamps(bool on);
@@ -20,8 +19,6 @@ namespace IQFeed.CSharpApiClient.Streaming.Level1
         void ReqCurrentUpdateFieldNames();
         void SelectUpdateFieldName(params DynamicFieldset[] fieldNames);
         void SetLogLevels(params LoggingLevel[] logLevels);
-        void ReqWatchList();
-        void ReqUnwatchAll();
         void ReqServerConnect();
         void ReqServerDisconnect();
     }

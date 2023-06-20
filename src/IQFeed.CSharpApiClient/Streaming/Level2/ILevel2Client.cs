@@ -8,7 +8,6 @@ namespace IQFeed.CSharpApiClient.Streaming.Level2
         void ReqWatchMarketByPrice(string symbol);
         void ReqWatchMarketByOrder(string symbol);
         void ReqMarketMakerNameById(string mmid);
-        void ReqUnwatch(string symbol);
         void ReqServerConnect();
         void ReqServerDisconnect();
     }
