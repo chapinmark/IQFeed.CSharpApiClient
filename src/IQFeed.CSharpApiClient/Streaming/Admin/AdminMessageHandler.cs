@@ -18,13 +18,10 @@ namespace IQFeed.CSharpApiClient.Streaming.Admin
 
         public void ProcessMessages(byte[] messageBytes, int count)
         {
-            var messages = Encoding.ASCII.GetString(messageBytes, 0, count).Split(IQFeedDefault.ProtocolLineFeedCharacter);
+            var messages = Encoding.ASCII.GetString(messageBytes, 0, count).Split(IQFeedDefault.ProtocolLineFeedCharacter, StringSplitOptions.RemoveEmptyEntries);
 
             for (var i = 0; i < messages.Length; i++)
             {
-                if (messages[i].Length == 0)
-                    continue;
-
                 if (messages[i][0] != 'S')
                     throw new NotSupportedException($"Admin message not supported: {messages[i]}"); // Admin should only receive S messages
 
