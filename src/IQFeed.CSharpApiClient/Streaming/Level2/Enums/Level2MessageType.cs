@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IQFeed.CSharpApiClient.Streaming.Level2.Messages;
-
-namespace IQFeed.CSharpApiClient.Streaming.Level2.Enums
+﻿namespace IQFeed.CSharpApiClient.Streaming.Level2.Enums
 {
     public enum Level2MessageType
     {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using IQFeed.CSharpApiClient.Lookup.Chains.Equities;
+﻿using IQFeed.CSharpApiClient.Lookup.Chains.Equities;
 
 namespace IQFeed.CSharpApiClient.Lookup.Chains.Messages
 {

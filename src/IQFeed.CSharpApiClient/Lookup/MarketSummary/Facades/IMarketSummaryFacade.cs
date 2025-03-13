@@ -1,8 +1,6 @@
-﻿using IQFeed.CSharpApiClient.Lookup.Symbol;
-using System;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Threading.Tasks;
+using IQFeed.CSharpApiClient.Lookup.Symbol;
 
 namespace IQFeed.CSharpApiClient.Lookup.MarketSummary.Facades
 {

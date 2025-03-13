@@ -1,5 +1,4 @@
 using System;
-using IQFeed.CSharpApiClient.Common.Interfaces;
 using IQFeed.CSharpApiClient.Streaming.Common.Messages;
 
 namespace IQFeed.CSharpApiClient.Streaming.Common.Interfaces

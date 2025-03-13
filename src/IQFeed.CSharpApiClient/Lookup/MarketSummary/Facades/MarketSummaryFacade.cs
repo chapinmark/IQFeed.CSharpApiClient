@@ -1,10 +1,10 @@
-﻿using IQFeed.CSharpApiClient.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using IQFeed.CSharpApiClient.Common;
 using IQFeed.CSharpApiClient.Lookup.Common;
 using IQFeed.CSharpApiClient.Lookup.MarketSummary.Messages;
 using IQFeed.CSharpApiClient.Lookup.Symbol;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace IQFeed.CSharpApiClient.Lookup.MarketSummary.Facades
 {

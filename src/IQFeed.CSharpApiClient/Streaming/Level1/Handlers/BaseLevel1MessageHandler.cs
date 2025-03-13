@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
-using System.Threading;
 using IQFeed.CSharpApiClient.Streaming.Common.Messages;
 using IQFeed.CSharpApiClient.Streaming.Level1.Messages;
 

@@ -1,6 +1,4 @@
-﻿using System.Net.PeerToPeer.Collaboration;
-
-namespace IQFeed.CSharpApiClient.Lookup.Chains
+﻿namespace IQFeed.CSharpApiClient.Lookup.Chains
 {
     public class ChainsRequestFormatter
     {

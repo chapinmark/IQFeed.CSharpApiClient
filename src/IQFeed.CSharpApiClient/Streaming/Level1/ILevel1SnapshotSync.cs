@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using IQFeed.CSharpApiClient.Streaming.Level1.Messages;
+﻿using IQFeed.CSharpApiClient.Streaming.Level1.Messages;
 
 namespace IQFeed.CSharpApiClient.Streaming.Level1
 {

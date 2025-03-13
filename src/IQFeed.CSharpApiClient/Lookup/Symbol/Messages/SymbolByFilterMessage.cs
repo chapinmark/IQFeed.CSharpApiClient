@@ -1,5 +1,4 @@
 ﻿using System.Globalization;
-using System.Linq.Expressions;
 using IQFeed.CSharpApiClient.Extensions;
 
 namespace IQFeed.CSharpApiClient.Lookup.Symbol.Messages

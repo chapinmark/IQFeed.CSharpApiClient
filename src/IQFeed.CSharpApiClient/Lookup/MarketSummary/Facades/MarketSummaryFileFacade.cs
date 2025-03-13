@@ -1,7 +1,7 @@
-﻿using IQFeed.CSharpApiClient.Lookup.Common;
-using IQFeed.CSharpApiClient.Lookup.Symbol;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using IQFeed.CSharpApiClient.Lookup.Common;
+using IQFeed.CSharpApiClient.Lookup.Symbol;
 
 namespace IQFeed.CSharpApiClient.Lookup.MarketSummary.Facades
 {
